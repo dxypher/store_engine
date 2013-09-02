@@ -6,6 +6,7 @@ gem 'rails', '3.2.14'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'haml'
 
 
 # Gems used only for assets and not required
@@ -18,6 +19,11 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+end
+
+group :test, :development do
+  gem 'rspec-rails'
+  gem 'capybara', '1.1.4'
 end
 
 gem 'jquery-rails'
