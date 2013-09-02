@@ -24,6 +24,7 @@ end
 group :test, :development do
   gem 'rspec-rails'
   gem 'capybara', '1.1.4'
+  gem 'launchy'
 end
 
 gem 'jquery-rails'

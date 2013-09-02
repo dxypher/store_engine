@@ -1,0 +1,6 @@
+%ul
+  - @products.each do |product|
+    %ul
+      %li= "Title: #{product.title}"
+      %li= "Description: #{product.description}"
+      %li= "Price: #{product.price}"
