@@ -10,17 +10,7 @@ feature 'View the store' do
     product = Product.create(title: 'T-Shirt', description: 'Brand new red t-shirt', price: 7.99)
     visit root_path
     expect(page).to have_css 'li', text: "Title: #{product.title}"
-  end
-
-  scenario 'user sees all products' do
-    product = Product.create(title: 'T-Shirt', description: 'Brand new red t-shirt', price: 7.99)
-    visit root_path
     expect(page).to have_css 'li', text: "Description: #{product.description}"
-  end
-
-  scenario 'user sees all products' do
-    product = Product.create(title: 'T-Shirt', description: 'Brand new red t-shirt', price: 7.99)
-    visit root_path
     expect(page).to have_css 'li', text: "Price: #{product.price}"
   end
 end
