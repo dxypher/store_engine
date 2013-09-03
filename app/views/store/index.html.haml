@@ -1,4 +1,7 @@
 %ul
+  - @categories.each do |category|
+    %li=link_to category.title.capitalize, category_path(category.id)
+%ul
   - @products.each do |product|
     %ul
       %li= "Title: #{product.title}"

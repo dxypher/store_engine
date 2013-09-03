@@ -13,4 +13,16 @@ feature 'View the store' do
     expect(page).to have_css 'li', text: "Description: #{product.description}"
     expect(page).to have_css 'li', text: "Price: #{product.price}"
   end
+
+  scenario 'user can browse products by category' do
+    t_shirts = Category.create(title: 't_shirts')
+    jeans = Category.create(title: 'jeans')
+    red_shirt = t_shirts.products.create(title: 'Red T', description: 'Brand new red t-shirt', price: 7.99)
+    blue_jeans = jeans.products.create(title: 'Levis Jeans', description: 'Boot Cut Blue Jeans', price: 27.99)
+
+    visit root_path
+    click_link 'Jeans'
+    expect(page).to have_css 'li', text: "Description: #{blue_jeans.description}"
+    expect(page).not_to have_css 'li', text: "Description: #{red_shirt.description}"
+  end
 end
