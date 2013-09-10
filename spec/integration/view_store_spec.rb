@@ -13,7 +13,9 @@ feature 'View the store' do
     expect(page).to have_css 'li', text: "Description: #{product.description}"
     expect(page).to have_css 'li', text: "Price: #{product.price}"
   end
+end
 
+feature 'Filter items by category' do
   scenario 'user can browse products by category' do
     t_shirts = Category.create(title: 't_shirts')
     jeans = Category.create(title: 'jeans')
