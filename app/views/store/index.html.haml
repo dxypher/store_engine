@@ -1,3 +1,4 @@
+=link_to "Cart", cart_path(current_cart)
 %p= "Items in Cart: #{current_cart.cart_items.size}"
 %ul
   - @categories.each do |category|

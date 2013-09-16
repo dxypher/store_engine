@@ -201,11 +201,11 @@
         1,
         null,
         1,
-        6,
+        19,
         null,
-        4,
-        4,
-        4,
+        6,
+        6,
+        6,
         null,
         null
       ],
@@ -216,14 +216,27 @@
       "/Users/Home/Desktop/jumpstart/store_engine/app/controllers/cart_items_controller.rb": [
         1,
         1,
-        1,
-        1,
-        1,
+        2,
+        2,
+        2,
         null,
         null
       ],
       "/Users/Home/Desktop/jumpstart/store_engine/app/models/cart_item.rb": [
         1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/Home/Desktop/jumpstart/store_engine/app/controllers/carts_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/Home/Desktop/jumpstart/store_engine/app/models/cart.rb": [
         1,
         1,
         1,
@@ -245,14 +258,9 @@
       "/Users/Home/Desktop/jumpstart/store_engine/app/controllers/store_controller.rb": [
         1,
         1,
-        5,
-        5,
+        8,
+        8,
         null,
-        null
-      ],
-      "/Users/Home/Desktop/jumpstart/store_engine/app/models/cart.rb": [
-        1,
-        1,
         null
       ],
       "/Users/Home/Desktop/jumpstart/store_engine/app/models/product.rb": [
@@ -263,6 +271,7 @@
         null
       ],
       "/Users/Home/Desktop/jumpstart/store_engine/config/routes.rb": [
+        1,
         1,
         1,
         1,
@@ -312,6 +321,11 @@
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/Home/Desktop/jumpstart/store_engine/spec/models/category_spec.rb": [
@@ -332,6 +346,6 @@
         null
       ]
     },
-    "timestamp": 1378852632
+    "timestamp": 1379375434
   }
 }

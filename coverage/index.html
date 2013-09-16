@@ -14,7 +14,7 @@
       <img src="./assets/0.7.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2013-09-10T15:37:12-07:00">2013-09-10T15:37:12-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2013-09-16T16:50:34-07:00">2013-09-16T16:50:34-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.03
+         1.19
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>24</b> files in total.
-    <b>115</b> relevant lines. 
-    <span class="green"><b>115</b> lines covered</span> and
+    <b>25</b> files in total.
+    <b>122</b> relevant lines. 
+    <span class="green"><b>122</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -57,7 +57,7 @@
         <td>9</td>
         <td>9</td>
         <td>0</td>
-        <td>2.6</td>
+        <td>4.7</td>
       </tr>
       
       <tr>
@@ -66,6 +66,16 @@
         <td>7</td>
         <td>5</td>
         <td>5</td>
+        <td>0</td>
+        <td>1.6</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#13bc06178f09473628c0891a96f2896d9c2cef37" class="src_link" title="app/controllers/carts_controller.rb">app/controllers/carts_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>2</td>
+        <td>2</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -87,7 +97,7 @@
         <td>4</td>
         <td>4</td>
         <td>0</td>
-        <td>3.0</td>
+        <td>4.5</td>
       </tr>
       
       <tr>
@@ -103,9 +113,9 @@
       <tr>
         <td class="strong"><a href="#11d610af01e8e3307eff084efbf8cd68c1baea1d" class="src_link" title="app/models/cart.rb">app/models/cart.rb</a></td>
         <td class="green strong">100.0 %</td>
+        <td>4</td>
         <td>3</td>
-        <td>2</td>
-        <td>2</td>
+        <td>3</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -243,9 +253,9 @@
       <tr>
         <td class="strong"><a href="#f8a8a34713868de0cdc78ab2d42ec4e3dfa9a3e6" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
         <td class="green strong">100.0 %</td>
+        <td>6</td>
         <td>5</td>
-        <td>4</td>
-        <td>4</td>
+        <td>5</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -263,9 +273,9 @@
       <tr>
         <td class="strong"><a href="#86040f6d497a1f7e39f566f16e4173766c68936f" class="src_link" title="spec/models/cart_spec.rb">spec/models/cart_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
+        <td>16</td>
         <td>11</td>
-        <td>8</td>
-        <td>8</td>
+        <td>11</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -362,8 +372,8 @@
           <code class="ruby">  def current_cart</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="8">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="19" data-linenumber="8">
+          <span class="hits">19</span>
           
           <code class="ruby">    Cart.find(session[:cart_id])</code>
         </li>
@@ -374,20 +384,20 @@
           <code class="ruby">  rescue ActiveRecord::RecordNotFound</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="10">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="10">
+          <span class="hits">6</span>
           
           <code class="ruby">    cart = Cart.create</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="11">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="11">
+          <span class="hits">6</span>
           
           <code class="ruby">    session[:cart_id] = cart.id</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="12">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="12">
+          <span class="hits">6</span>
           
           <code class="ruby">    cart</code>
         </li>
@@ -434,20 +444,20 @@
           <code class="ruby">  def create</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="3">
+          <span class="hits">2</span>
           
           <code class="ruby">    product = Product.find(params[:product_id])</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="4">
+          <span class="hits">2</span>
           
           <code class="ruby">    current_cart.cart_items.create(:product =&gt; product)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
           
           <code class="ruby">    redirect_to root_path</code>
         </li>
@@ -459,6 +469,54 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="13bc06178f09473628c0891a96f2896d9c2cef37">
+  <div class="header">
+    <h3>app/controllers/carts_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class CartsController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">    </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby">end</code>
@@ -542,14 +600,14 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="3">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="8" data-linenumber="3">
+          <span class="hits">8</span>
           
           <code class="ruby">    @products = Product.all</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="4">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="8" data-linenumber="4">
+          <span class="hits">8</span>
           
           <code class="ruby">    @categories = Category.all</code>
         </li>
@@ -605,8 +663,8 @@
     <h3>app/models/cart.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>2</b> relevant lines. 
-      <span class="green"><b>2</b> lines covered</span> and
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -626,7 +684,13 @@
           <code class="ruby">  has_many :cart_items, dependent: :destroy</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  has_many :products, through: :cart_items</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
           
           
           <code class="ruby">end</code>
@@ -1991,8 +2055,8 @@
     <h3>config/routes.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>4</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2024,7 +2088,13 @@
           <code class="ruby">  resources :cart_items, only: [:create]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  resource :cart, only: [:show]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
           
           
           <code class="ruby">end</code>
@@ -2237,8 +2307,8 @@
     <h3>spec/models/cart_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>8</b> relevant lines. 
-      <span class="green"><b>8</b> lines covered</span> and
+      <b>11</b> relevant lines. 
+      <span class="green"><b>11</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2307,6 +2377,36 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;responds to #products&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    current_cart = Cart.create</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    current_cart.should respond_to(:products)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">end</code>

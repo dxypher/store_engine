@@ -1,0 +1,7 @@
+- current_cart.products.each do |product|
+  %ul
+    %li
+      %ul
+        %li= product.title
+        %li= product.description
+        %li= "Price: $#{product.price}"
