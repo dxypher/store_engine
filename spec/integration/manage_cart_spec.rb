@@ -28,3 +28,25 @@ feature 'View cart' do
     expect(page).to have_css 'li', text: 'Price: $7.99'
   end
 end
+
+feature 'Remove item from cart' do
+  scenario 'user should see remove link' do
+    product = Product.create(title: 'T-Shirt', description: 'Brand new red t-shirt', price: 7.99)
+
+    visit root_path
+    click_link 'Add to Cart'
+    click_link 'Cart'
+    expect(page).to have_css 'a', text: "remove"
+  end
+
+  scenario 'user should be able to remove an item from the cart' do
+    product = Product.create(title: 'T-Shirt', description: 'Brand new red t-shirt', price: 7.99)
+
+    visit root_path
+    click_link 'Add to Cart'
+    click_link 'Cart'
+    click_link 'remove'
+
+    expect(page).not_to have_css 'li', text: 'Brand new red t-shirt'
+  end
+end

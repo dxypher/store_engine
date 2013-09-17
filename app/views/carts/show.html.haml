@@ -5,3 +5,4 @@
         %li= product.title
         %li= product.description
         %li= "Price: $#{product.price}"
+        %li= link_to 'remove', cart_item_path(product.cart_items), method: :delete
